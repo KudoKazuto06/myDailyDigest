@@ -1,0 +1,157 @@
+.news-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f4f6f8;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+select,
+input[type="date"] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0.3rem;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #005fa3;
+}
+
+.read-more-button {
+  padding: 0.5rem 1rem;
+  background-color: #10b981;
+  color: white;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  display: block;           /* Make it a block to control alignment */
+  margin-left: auto;        /* Push it to the right */
+  margin-right: 5%;
+  text-align: right;        /* Align text inside button to the right */
+  width: fit-content;       /* Button size fits the text */
+}
+
+.read-more-button:hover {
+  background-color: #059669;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 0.3rem;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.article-content {
+  padding: 1rem;
+}
+
+.article-content h3 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.external-links ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #0077cc;
+}
+
+.external-links li a {
+  color: #0077cc;
+}
+
+.external-links li a:hover {
+  text-decoration: underline;
+}
+
+.control-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.generate-button,
+.load-more {
+  display: block;
+  margin: 1rem auto;
+}
